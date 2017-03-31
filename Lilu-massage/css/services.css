@@ -1,0 +1,183 @@
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content-img__service-0 {
+    background: url(../img/service-0.jpg);
+    background-size: cover;
+}
+
+.content-img__service-1 {
+    background: url(../img/service-1.jpg);
+    background-size: cover;
+}
+
+.content-img__service-2 {
+    background: url(../img/service-2.jpg);
+    background-size: cover;
+}
+
+.content-img__service-3 {
+    background: url(../img/service-3.jpg);
+    background-size: cover;
+}
+
+.content-img__service-4 {
+    background: url(../img/service-4.jpg);
+    background-size: cover;
+}
+
+.content-img__service-5 {
+    background: url(../img/service-5.jpg);
+    background-size: cover;
+}
+
+.content-img__service-6 {
+    background: url(../img/service-6.jpg);
+    background-size: cover;
+}
+
+.content-img__service-7 {
+    background: url(../img/service-7.jpg);
+    background-size: cover;
+}
+
+.content-img__service-8 {
+    background: url(../img/service-8.jpg);
+    background-size: cover;
+}
+
+.content-img {
+    width: 279px;
+    height: 279px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 12px rgba(225, 225, 225, 0.7) inset;
+    float: left;
+    margin: 2%;
+}
+
+.specification {
+    display: block;
+    width: 58%;
+    padding: 7% 2% 0 5%;
+    float: left;
+    color: #676566;
+    font-size: 1.6rem;
+}
+
+.accordion-container {
+    position: relative;
+    height: auto;
+    font-family: "PhilosopherRegular", sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    color: rgb(12, 95, 52);
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 0 0 5%;
+    letter-spacing: 0.15rem;
+}
+
+.st-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.st-accordion > ul > li {
+    padding: 2%;
+}
+
+.st-closed {
+    padding: 0 10px 0 0;
+}
+
+.st-closed img {
+    height: 17px;
+
+}
+
+.st-accordion > ul > li:first-child {
+    margin-top: 5%;
+}
+
+.st-accordion > ul > li:last-child {
+    margin-bottom: 5%;
+}
+
+.button-hello {
+    position: static;
+    display: inline-block;
+    margin: 2%;
+    padding: 15px 40px;
+}
+
+.kind {
+    width: 60%;
+    float: left;
+    color: rgb(12, 95, 52);
+    display: block;
+    margin: 20px 8% 20px 0;
+    height: auto;
+}
+
+.kind::before {
+    content: url("../img/tilda_green.png");
+    margin: 2%;
+}
+
+.duration {
+    width: 12%;
+    float: left;
+    background-color: #c7d5d3;
+    color: rgb(12, 95, 52);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+}
+
+.price {
+    width: 8%;
+    float: right;
+    background-color: #0c5f34;
+    color: rgb(199, 213, 211);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin: 15px 30px 0 0;
+}
+
+.addition {
+    color: #676566;
+}
+
+.certificate-text {
+    color: #676566;
+    font-size: 1.6rem;
+    font-family: "PhilosopherRegular", sans-serif;
+    text-align: center;
+    padding: 2%;
+}
+
+.certificate-image {
+    display: block;
+    margin: 0 auto;
+    padding: 2% 0 4%;
+}
+
+
+

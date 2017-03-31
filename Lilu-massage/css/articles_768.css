@@ -1,0 +1,38 @@
+.text-style {
+    font-size: 0.78rem;
+}
+
+.title-style {
+    font-size: 1.3rem;
+    margin-left: 0;
+}
+
+.first-paragraph-style {
+    width: 100%;
+    float: none;
+}
+
+.first-paragraph-style p {
+    margin-left: 2%;
+    width: 45.4%;
+    float: left;
+}
+
+.img-style {
+    width: 615px;
+    height: 340px;
+}
+
+.popup-box {
+  left: 50% !important;
+  margin-left: -340px;
+  width: 680px !important;
+}
+
+.overflow {
+  height: 1100px;
+}
+
+p a {
+  font-size: 0.78rem;
+}

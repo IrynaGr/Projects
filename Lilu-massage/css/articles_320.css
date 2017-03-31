@@ -1,0 +1,57 @@
+.item__link_1,
+.item__link_2,
+.item__link_3,
+.item__link_4,
+.item__link_5,
+.item__link_6,
+.item__link_7,
+.item__link_8,
+.item__link_9 {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.article__text {
+  height: 100%;
+}
+
+.text-style {
+    font-size: 0.78rem;
+    line-height: 25px;
+}
+
+.title-style {
+    font-size: 1.3rem;
+    margin-left: 0;
+}
+
+.first-paragraph-style {
+    width: 100%;
+    float: none;
+}
+
+.first-paragraph-style p {
+    margin-left: 2%;
+    width: 45.4%;
+    float: left;
+}
+
+.img-style {
+    width: 243px;
+    height: 340px;
+}
+
+.popup-box {
+  left: 50% !important;
+  margin-left: -150px;
+  width: 300px !important;
+}
+
+.overflow {
+  height: 1510px;
+}
+
+p a {
+  font-size: 0.78rem;
+}

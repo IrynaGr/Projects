@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'philosopher';
+    src: url('../fonts/philosopher-bolditalic-webfont.woff2') format('woff2'), url('../fonts/philosopher-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PhilosopherBold";
+    src: url("../fonts/PhilosopherBold/PhilosopherBold.eot");
+    src: url("../fonts/PhilosopherBold/PhilosopherBold.eot?#iefix")format("embedded-opentype"), url("../fonts/PhilosopherBold/PhilosopherBold.woff") format("woff"), url("../fonts/PhilosopherBold/PhilosopherBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PhilosopherRegular";
+    src: url("../fonts/PhilosopherRegular/PhilosopherRegular.eot");
+    src: url("../fonts/PhilosopherRegular/PhilosopherRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/PhilosopherRegular/PhilosopherRegular.woff") format("woff"), url("../fonts/PhilosopherRegular/PhilosopherRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.articles_wrapper {
+   margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    position: relative;
+}
+
+.articles-slider__item {
+    margin: 0 10px;
+}
+
+.item__link_1,
+.item__link_2,
+.item__link_3,
+.item__link_4,
+.item__link_5,
+.item__link_6,
+.item__link_7,
+.item__link_8,
+.item__link_9 {
+    text-decoration: none;
+    display: block;
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+.article:hover {
+    opacity: 0.5;
+}
+
+.article__img {
+    width: 100%;
+}
+
+.article__text {
+    width: 100%;
+    height: 320px;
+    padding: 20px 25px 0px 25px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-top: none;
+    overflow: hidden;
+}
+
+.article__header {
+    font-size: 1.25rem;
+    color: #0c5f34;
+    text-align: center;
+    font-family: "PhilosopherBold";
+}
+
+.article__about {
+    margin: 20px 0;
+    font-size: 1.125rem;
+    font-family: "PhilosopherRegular";
+    color: #676566;
+}
+
+.popup-box {
+    position: absolute;
+    border-radius: 5px;
+    background: #fff;
+    display: none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    z-index: 9999999;
+    font-size: 0.875rem;
+}
+
+.popup-box .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #434343;
+    padding: 5px;
+    font-size: 1.25rem;
+}
+
+.popup-box .close:hover {
+    color: #000;
+}
+
+.popup-box .bottom {
+    background: #eee;
+    border-top: 1px solid #e5e5e5;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#blackout {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 999999;
+    left: 0;
+    display: none;
+}
+
+.first-article {
+  width: 100%  ;
+  margin: 0 auto;
+}
+
+.img-style {
+    float: left;
+    width: 400px;
+    height: 460px;
+}
+
+.title-style {
+    margin-left: 4.688%;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 2.1875rem;
+    font-weight: 700;
+    color: rgb(12, 95, 52);
+    font-family: 'philosopher', sans-serif;
+}
+
+.text-style {
+    color: rgb(103, 101, 102);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+.first-paragraph-style {
+    margin-top: 1.96%;
+    width: 51.96%;
+    float: right;
+}
+
+.paragraph-style {
+    clear: both;
+}
+
+.hide-article {
+    display: none;
+}
+
+.text-style div p {
+    margin-top: 20px;
+}
+
+.fourth-article {
+    overflow: hidden;
+}
+
+/*Седьмая статья*/
+
+.seventh-img {
+  height: 720px
+}
+
+/*Девятый параграф*/
+
+.about-oil-9 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+p a {
+  text-decoration: none;
+  color: rgb(247, 25, 25);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+p a:hover {
+  background: rgb(207, 193, 6)
+}
+
+.overflow {
+  height: 1180px;
+  overflow: auto;
+}
