@@ -97,6 +97,7 @@ p {
   left: 0;
   z-index: 1000;
   overflow-y: auto;
+  top: 0;
 }
 
 .nav {
@@ -145,6 +146,73 @@ li {
   margin: 0 auto;
   padding: 0 10px;
 }
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.container-head {
+  width: 100%;
+  height: 100%;
+  background-color: #64285a;  
+  overflow: hidden;
+  position: absolute;
+}
+
+.quote-container {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.quote {
+    font-weight: bold;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 45px;
+}
+
+.mobile-quote {
+    color: #fff;
+    text-align: -webkit-center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+
+.move-ahead {
+    font-size: 1rem;
+    border: none;
+    background: #fff;
+    margin-top: 30px;
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    color: #64285a;
+    display: inline-block;
+    line-height: 42px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.move-ahead:hover, .move-ahead:focus {
+    border: 2px solid #64285a;
+    outline: 2px solid #fff;
+    line-height: 35px;
+    color: #64285a;
+    text-decoration: none;
+}
+
+
+
+
 
 .jumbotron {
   background: url(images/portfolio2.png) no-repeat center center;
@@ -986,6 +1054,18 @@ color: #5EFC8D;
    height: 14rem;
 }
 
+.close-block {
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: 0px;
+  width: 16px;
+  height: 16px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEXqAAD8oaH/AAD/ra3/vr7///91+I/7AAAAQklEQVR42oXPwQoAIAgD0JXu/385FfTQgnYweKAp9pUXmE+swAFWAG8owQBTqjQQ8SQOcAdRQVtkqHy7dDFd/X/tAVqqAopyUfkOAAAAAElFTkSuQmCC);
+  cursor: pointer;
+  position: fixed;
+}
+
 .container1{
   width: 100%;
   position: relative;
@@ -1437,3 +1517,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AB449A', end
     margin-right: 36%;
 }
 }
+
