@@ -1,0 +1,18 @@
+{
+  "title"       : "Styleguide",
+  "mask"        : "*.scss",
+  "placeholder" : "[modifier]",
+
+"//": "relative to this file.",
+  "builder"      : "./node_modules/michelangelo/kss_styleguide/custom-template/",
+  "source"       : "src/",
+  "destination"  : "kss_styleguide/styleguide/",
+
+"//": "relative to source.",
+  "homepage"     : "../kss_styleguide/kss-homepage.md",
+
+"//": "relative to the generated style guide.",
+  "css": ["../../dist/css/styles.min.css"],
+  "js": ["../../dist/js/scripts.min.js"]
+}
+

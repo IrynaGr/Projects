@@ -1,0 +1,435 @@
+/*   Details   */
+
+
+.callMainFon {
+	background: #fff;
+	padding-left: 2%;
+	padding-right: 2%;
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   position: relative;
+   z-index: 90;
+}
+
+.screenVideo {
+  border: 1px solid #999;
+  width: 100%;
+}
+
+.screen{
+	margin-bottom: -2%;
+}
+
+h3 {
+    color: #222;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.zmdi {
+	padding-left: 1%;
+	float: initial;
+}
+
+.zmdi-fullscreen {
+    position: relative;
+    top: -775px;
+    left: 96%;
+}
+
+.list-group-item{
+	position: relative;
+	top: -10px;
+	left: 32%;
+}
+
+.gray {
+	color: #999;
+}
+
+.uplodeFile {
+	margin-top: 1%;
+}
+
+.uplodeZona {
+	border: none;
+}
+
+.uplodeDrop {
+	height: 40px;
+	border: none;
+	line-height: 2;
+	
+	span {
+		margin-left: 2%;
+	}
+	.zmdi-plus-circle-o {
+		margin-left: 5%;
+	}
+
+}
+
+
+.o-btn--2:hover {
+  box-shadow: inset 0px 0px 0px 1px #cf201f;
+  color: #cf201f;
+}
+
+/*.Select-control {
+  box-shadow: inset 0 0 0 1px #ddd;
+  transition: background .3s,color .3s,box-shadow .3s ease-out;
+}
+
+.Select-control:hover {
+  box-shadow: inset 0px 0px 0px 1px #cf201f;
+}*/
+
+.o-reaction__form {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	.o-reaction__input {
+		height: 47px;
+		width: 100%;
+		border: 1px solid #bbb;
+	}
+	.o-reaction__input .is-active {
+	border-color: #666;
+    }
+    .o-reaction__input:hover {
+    	border-color: #666;
+    }
+    .o-reaction__input:focus {
+    	border-color: #666;
+    }
+	button.o-reaction__btn--submit {
+		background: #bbb;
+	}
+	span {
+		background-color: #bbb;
+		.zmdi-mail-send {
+			margin-left: 1%;
+		}
+	}
+}
+
+button.o-reaction__btn--submit:hover {
+    color: #666666;
+}
+
+.no-touch .u-noBoxShadow:hover {
+    box-shadow: none!important;
+    background: transparent;
+}
+
+.o-reaction__form span {
+    background-color: transparent;
+}
+
+.no-touch .o-btn--3:hover::before {
+    box-shadow: inset 0 0 0 2px #666;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+.no-touch .o-btn--3:hover {
+    box-shadow: none;
+    color: #666;
+}
+
+.o-btn--3:before {
+    box-shadow: inset 0 0 0 35px #666666;
+}
+
+.no-touch .o-reaction__form .o-reaction__input:hover {
+    border-color: #666666;
+}
+
+.rightSideOfCall {
+	float: left;
+	width: 70%;
+}
+
+.leftSideOfCall {
+	float: right;
+	width: 30%;
+	padding-left: 1%;
+}
+
+.listOfMembers h3 {
+	margin-bottom: 5%;
+}
+
+.listOfMembers img {
+	padding-left: 2%;
+}
+
+.member_picture {
+	width: 10%;
+	float: left;
+	padding-right: 3%;
+	border-radius: 50%;
+}
+
+.member_position {
+	padding-bottom: 5%;
+}
+
+.addMember {
+	margin-top: 5%;
+}
+
+.section-addMember {
+	width: 60%;
+	margin: auto;
+	padding-bottom: 5%;
+	button {
+		margin: auto;
+		margin-top: 10px;
+	}
+}
+
+.zmdi-plus{
+	padding-right: 3%;
+	float: left;
+}
+
+.addNotes {
+	margin-top: 20px;
+	border: 1px solid #bbb;
+	padding: 1px 5px;
+}
+
+.zmdi-edit {
+	margin-right: 100px;
+}
+
+.listOfMembers .active {
+	color: #1ed81e;
+}
+
+.listOfMembers .non-active {
+	color: #5A635D;
+}
+
+.zmdi-star-outline {
+	float: right;
+}
+
+a .star {
+	float: right;
+}
+
+.u-marg-bottom {
+	background: transparent;
+}
+
+.writeNotes {
+  border: 1px solid #bbb;
+  background: #fff;
+  margin: 10px 0;
+  overflow: hidden;
+  width: 100%;
+  resize: none;
+  &.hide {
+    visibility: hidden;
+  }
+  &.open {
+    height: 100px;
+  }
+}
+
+.buttonForNotes {
+	width: 100%;
+}
+
+.downloadNotes {
+  &.hide {
+    visibility: hidden;
+  }
+}
+
+.roomButtons {
+	margin-bottom: 10px;
+}
+
+#localVideo {
+	margin-bottom: 10px;
+}
+
+.vidContainer {
+	margin-bottom: 10px;
+}
+
+.backButton {
+	margin-top: 10px;
+}
+
+
+/*   ListView   */
+
+.conferenceList {
+	float: right;
+	width: 80%;
+}
+
+.app-nav__btn--icon-txt {
+    width: 160px;
+}
+
+.o-subnav {
+    position: absolute;
+    top: 80%;
+    left: 0.3%;
+    width: 200%;
+    min-height: 35%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.app-nav__btn-lenght {
+	width: 300px;
+	margin-bottom: 5%;
+}
+
+.keywords {
+	font-size: 12px;
+	font-style: italic;
+}
+
+.listMember {
+	display: inline-flex;
+	img {
+		margin-right: 10px;
+		border-radius: 50%;
+	}
+}
+
+.online {
+	color: #1ed81e;
+}
+
+.offline {
+	color: #999;
+}
+
+.c-conference-list {
+	margin: 1em 0;
+    background: #fff;
+    box-shadow: inset 0 0 0 1px #eee;
+}
+
+.list_conference-header {
+    padding-top: 10px;
+    font-weight: 600;
+    border-bottom: 3px solid #eee;
+}
+
+.c-conference-item {
+	margin-top: 1%;
+}
+
+.pagination {
+    display: inline-flex;
+    padding-left: 0;
+    margin: 20px 0;
+    li {
+    	display: inline;
+    	padding: 10px;
+    }  
+    .active a {
+        border: 1px solid #666;
+        background-color: #666;
+        color: #fff;
+        padding: 10px;
+    }    
+}
+
+nav {
+	text-align: center;
+}
+
+.pagination li a:hover {
+    color: #bbb;
+}
+
+.pagination li:hover {
+	-webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.app-nav__btn--icon-txt {
+    margin-bottom: 10px;
+}
+
+
+.c-nav, .c-nav__subnav {
+    overflow-y: visible;
+    position: static;
+    box-shadow: none;
+    background: 0 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    background-color:  #cf201f;
+}
+
+.c-sidebar__heading {
+	background-image: url('https://media.platform.co.nl/media/guild_backgrounds/Schermafbeelding_2016-08-18_om_10.30.45.png.400x240_q85_crop.png');
+}
+
+.c-sidebar__heading-bg {
+    background: #cf201f;
+}
+
+.s-wrapper__nav {
+    width: 17.66667%;
+}
+
+.c-button {
+    box-shadow: 0 1px #666666;
+    background: #666666;
+}
+
+
+.filter {
+	position: relative;
+    margin-top: -5%;
+}
+
+#remotes {
+	float: right;
+	margin-left: 2.3%;
+	margin-right: 0;
+}
+
+.g-row12 {
+    width: auto;
+    max-width: none;
+    margin: 0;
+}
+
+/*   Create    */
+
+.organizeConference {
+	width: 50%;
+	float: left;
+	margin-left: 2%;
+} 
+
+.o-btn__icon—left {
+    float: left;
+    padding-left: 5px;
+}
+
+.zmdi-file {
+	float: left;
+    padding-left: 5px;
+}
+
+.longButton {
+	 width: 250px;
+}
