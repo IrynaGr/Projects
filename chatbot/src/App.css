@@ -1,0 +1,303 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.application-container {
+  max-width: 550px;
+  height: 500px;
+  border: 2px solid #2B4479;
+  border-radius: 6px;
+  background: #EDEEF3;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 0 0;
+}
+
+.chat-image {
+  max-width: 70%;
+}
+
+.chat-header {
+  height: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #4E69A2;
+}
+
+.header-on-off {
+  margin-top: 4px;
+  width: 10%;
+  float: left;
+}
+
+.menu-button {
+  margin: 8px;
+}
+
+.light-on,
+.light-off {
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.light-on {
+  color: #00A651;
+}
+
+.light-off {
+  color: #A63937;
+}
+
+.icon-off {
+  color: #7187B5;
+}
+
+.icon-on {
+  color: #EDEEF3;
+}
+
+.header-title {
+  margin-top: 4px;
+  width: 55%;
+  float: left;
+}
+
+.header-menu-buttons {
+  margin-top: 4px;
+  width: 35%;
+  float: right;
+}
+
+.chat-body {
+  padding: 1px 6px 1px 1px;
+  margin: 0;
+  width: 100%;
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat-indicator {
+  background-color: #ffffff;
+  height: 30px;
+}
+
+.indicator {
+  margin-left: 2em;
+}
+
+.messages {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.chat-footer-form-input {
+  padding: 1px 6px 1px 1px;
+  bottom: 30px;
+  height: 60px;
+}
+
+.chat-footer {
+  bottom: 0;
+  height: 30px;
+  background-color: #4E69A2;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom: 2px solid #2B4479;
+}
+
+.chat-footer > span {
+  width: 100%;
+}
+
+.form-input {
+  float: left;
+  width: 79%;
+}
+
+.form-submit {
+  float: right;
+  width: 20%;
+}
+
+.footer-menu-buttons-left {
+  margin-top: 4px;
+  width: 45%;
+  float: left;
+}
+
+.footer-menu-buttons-right {
+  margin-top: 4px;
+  margin-right: 4px;
+  float: right;
+  text-align: right;
+}
+
+.user-submit-button {
+  background-color: #4E69A2;
+  border: 2px solid #2B4479;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.9em;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.button-inactive {
+  background-color: #787878;
+  border: 2px solid #5f5f5f;
+  color: #4b4b4b;
+  cursor: not-allowed;
+}
+
+/*ul.messages li.medium {*/
+  /*background: transparent url(/images/avatar.png?f9454a60abc5b122be38062405706995) top left no-repeat;*/
+/*}*/
+
+ul.messages li.medium {
+  float: left;
+  min-height: 41px;
+  padding: 0 0 0 46px;
+  border-radius: 8px;
+}
+
+ul.messages li.medium .msg {
+  float: left;
+}
+
+ul.messages li {
+  margin: 4px 2px 8px 2px;
+  width: 100%;
+  display: list-item;
+}
+
+ul.messages .msg {
+  color: #555E6D;
+  clear: both;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #f9fefa;
+  width: auto;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+ul.messages li.user .msg {
+  min-height: 35px;
+  margin-right: 0;
+  color: #555E6D;
+  border: 1px solid #bcc7d6;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #E2EDFF;
+  width: auto;
+  clear: both;
+  float: right;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.timer {
+  max-width: 535px;
+  border: 1px solid #009CD6;
+  border-radius: 3px;
+}
+
+.timer .timer-header {
+  background-color: #009CD6;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.timer .timer-body {
+  background-color: #006BC6;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.mark-script-white {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  text-shadow: 2px 2px 2px black;
+}
+
+.mark-script-h4 {
+  font-family: 'Marck Script';
+  font-size: 24px;
+}
+
+.mark-script {
+  font-family: 'Marck Script';
+  line-height: 1.2em;
+}
+
+label {
+  float: left;
+  font-size: 16px;
+  font-weight: normal;
+  margin-right: 40px;
+}
+
+input.gender {
+  float: left;
+  width: 20px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+span.gender {
+  margin-left: 6px;
+}
+
+input[type="text"] {
+  border-color: royalblue;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+  width: 100%;
+  height: 2.2em;
+  font-size: 1.6em;
+  display: inline-block;
+  padding-left: 4px;
+}

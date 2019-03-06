@@ -1,0 +1,106 @@
+{
+  "schema": [
+    {
+      "text": "Hello {first_name} you, how are you doing?"
+    },
+    {
+      "text": "I know it is hard to believe"
+    },
+    {
+      "text": "but I can really help you"
+    },
+    {
+      "text": "Are you female?"
+    },
+    {
+      "form": {
+        "tag": "input",
+        "type": "radio",
+        "name": "gender",
+        "id": "gender",
+        "class": "gender",
+        "values": [
+          {
+            "text": "Female",
+            "value": "female"
+          },
+          {
+            "text": "Male",
+            "value": "male"
+          }
+        ],
+        "repeat": true
+      }
+    },
+    {
+      "text": "first I would like to know your name"
+    },
+    {
+      "form": {
+        "tag": "input",
+        "type": "text",
+        "name": "first_name",
+        "id": "first-name",
+        "class": "first-name",
+        "placeholder": "Your first name",
+        "repeat": true
+      }
+    },
+    {
+      "text": "Thank you {first_name}, now your birthday"
+    },
+    {
+      "form": {
+        "tag": "input",
+        "type": "date",
+        "name": "date_of_birth",
+        "id": "date-of-birth",
+        "class": "date-of-birth",
+        "repeat": true
+      }
+    },
+    {
+      "text": "You are sure you were born on {date_of_birth}? If so I would like to know your email"
+    },
+    {
+      "form": {
+        "tag": "input",
+        "type": "email",
+        "name": "email",
+        "id": "email",
+        "class": "email",
+        "placeholder": "Your email",
+        "repeat": true
+      }
+    },
+    {
+      "text": "repeat now your email"
+    },
+    {
+      "form": {
+        "tag": "input",
+        "type": "email",
+        "name": "compare_email",
+        "id": "compare-email",
+        "class": "email",
+        "placeholder": "Repeat your email",
+        "repeat": false
+      }
+    },
+    {
+      "submit": true
+    },
+    {
+      "text": "Thank you"
+    },
+    {
+      "text": "Some other bla bla bla"
+    },
+    {
+      "text": "Good Will Hunting"
+    },
+    {
+      "text": "and now you get your lucky number"
+    }
+  ]
+}
