@@ -1,0 +1,127 @@
+/* ###################################################### */
+/* ### 02. Screen-02 */
+/* ###################################################### */
+
+#screen_02 {
+
+  #card-slider {
+    margin: -2rem 0 0 0;
+
+    &.disabled {
+      pointer-events: none;
+
+      li:not(.selected) {
+        opacity: .75;
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        -ms-filter: blur(1px);
+        -o-filter: blur(1px);
+        filter: blur(1px);
+      }
+
+      .chevron {
+        opacity: 0;
+      }
+
+    }
+
+    li {
+      cursor: pointer;
+      -webkit-transition: opacity 1.5s ease;
+      transition: opacity 1.5s ease;
+
+      &.selected {
+        position: relative;
+        z-index: 2;
+      }
+
+    }
+
+  }
+
+}
+
+/* Only stack cards, when space is available */
+
+@media (min-width: 900px) {
+
+  #screen_02 {
+
+    #card-slider {
+
+      li {
+
+        /* Stack cards #left */
+
+        &:not(:first-child):not(last-child) {
+          margin-left: -1.5rem;
+        }
+
+        /* Stack cards #top */
+
+        &:nth-child(odd) {
+          -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+
+  #screen_02 {
+
+    #card-slider {
+
+      /* Only show four cards on smaller screens */
+
+      li:not(:nth-of-type(-n+4)) {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+
+  #screen_02 {
+
+    #card-slider {
+
+      /* Only show four cards on smaller screens */
+
+      li:not(:nth-of-type(-n+3)) {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 539px) {
+
+  #screen_02 {
+
+    #card-slider {
+
+      /* Only show two cards on mobile */
+
+      li:not(:nth-of-type(-n+2)) {
+        display: none;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,193 @@
+/* Thank you page design */
+
+body {
+  background: #190E18 url('../img/screens/thank-you/background.png') center center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 769px) {
+  body {
+    background: #190E18 url('../img/screens/thank-you/background.png') top left no-repeat;
+  }
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+
+}
+
+h4, .h4 {
+  font-size: 3em;
+}
+
+@media (min-width: 769px) {
+  #main-outer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  #main-container {
+    color: #7d3e7c;
+    width: 100%;
+    max-width: 890px;
+    height: 540px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+
+  .container-content {
+    height: 540px;
+    margin-bottom: 4em;
+    margin-top: 2em;
+  }
+
+  .thank-you-body {
+    background-color: #321e4f;
+    color: #fff;
+    opacity: 0.9;
+    border-radius: 20px;
+    width: 537px;
+    height: 360px;
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .thank-you-body:after {
+    margin-bottom: 60px;
+  }
+
+  .disclaimer-container {
+    background: rgba(255, 255, 255, .5);
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .with-padding {
+    padding-top: 3em;
+  }
+
+  .thank-you-deck-image {
+    width: 274px;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .thank-you-header-bg {
+    border-radius: 75px;
+    height: 164px;
+    background-color: #7d3e7c;
+    padding: 30px;
+  }
+
+  .header-avatar {
+    float: right;
+    margin-top: -35px;
+    margin-right: -38px;
+  }
+
+  .header-text {
+    color: #fff;
+    float: left;
+    width: 70%;
+  }
+
+  .btn-custom-sized {}
+}
+
+p {
+  font-size: 1.3em;
+}
+
+form {
+  font-size: 2em;
+}
+
+.gradient {
+
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #7d3e7c;
+
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image:
+          -webkit-gradient(linear, left top, right top, from(rgb(75,57,107)), to(rgb(129,59,119)));
+
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image:
+          -webkit-linear-gradient(left, rgb(75,57,107), rgb(129,59,119));
+
+  /* Firefox 3.6 - 15 */
+  background-image:
+          -moz-linear-gradient(left, rgb(75,57,107), rgb(129,59,119));
+
+  /* Opera 11.1 - 12 */
+  background-image:
+          -o-linear-gradient(left, rgb(75,57,107), rgb(129,59,119));
+
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image:
+          linear-gradient(to right, rgb(75,57,107), rgb(129,59,119));
+
+}
+
+@media (max-width: 768px) {
+
+  .thank-you-body {
+    background-color: #321e4f;
+    color: #fff;
+    opacity: 0.9;
+    border-radius: 20px;
+    width: 537px;
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  .thank-you-deck-container {
+    height: 100%;
+    margin-top: 3em;
+  }
+
+  .thank-you-deck-image {
+    width: (274px / 1.5);
+    margin: 0 auto;
+  }
+
+  .thank-you-header {
+    margin-top:20px;
+  }
+
+  .header-text {
+    color: #fff;
+    width: 100%;
+    border-radius: 75px;
+    background-color: #7d3e7c;
+    padding: 30px;
+  }
+
+  .header-text {
+    color: #fff;
+    margin-top:-20px;
+  }
+
+  .btn-custom-sized {
+    font-size: 2em;
+    width: 70%;
+  }
+
+}

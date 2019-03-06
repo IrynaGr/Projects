@@ -1,0 +1,133 @@
+/* ###################################################### */
+/* ### 02. General */
+/* ###################################################### */
+
+::-moz-selection {
+  background: $color_brand;
+  color: $color_light;
+}
+
+::selection {
+  background: $color_brand;
+  color: $color_light;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: $color_dark;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: $color_brand;
+}
+
+body,
+html {
+  min-height: 100%;
+}
+
+body {
+  @include app-background($color_dark, 'background_off.png');
+}
+
+.container {
+  max-width: 960px;
+}
+
+#background {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity $candle_fire ease-in-out;
+  transition: opacity $candle_fire ease-in-out;
+  top: 0;
+  left: 0;
+  @include app-background($image: 'background_on.png');
+
+  &.flash {
+    opacity: 1;
+  }
+
+}
+
+
+#avatar-row {
+  margin-top: -180px;
+}
+
+#content-row {
+  margin-top: 60px;
+}
+
+#content-wrapper {
+  background: rgba($color_brand, .75);
+  margin: 7rem auto;
+  width: 100%;
+  border-radius: $border_radius;
+  border: 2px solid darken($color_brand, 5%);
+  box-shadow: 0 0 20px rgba($color_dark, .75);
+}
+
+#content-wrapper-app {
+  background: rgba($color_brand, .75);
+  margin: 1rem auto;
+  width: 100%;
+  border-radius: $border_radius;
+  border: 2px solid darken($color_brand, 5%);
+  box-shadow: 0 0 20px rgba($color_dark, .75);
+}
+
+@media (min-width: 360px) and (max-width: 639px)  {
+  #avatar-row {
+    margin-top: -140px;
+  }
+
+  #content-row {
+    margin-top: 60px;
+  }
+
+  #content-wrapper {
+    margin: 7rem auto;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px){
+  #avatar-row {
+    margin-top: -170px;
+  }
+
+  #content-row {
+    margin-top: 60px;
+  }
+
+  #content-wrapper {
+    margin: 7rem auto;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  #avatar-row {
+    margin-top: -210px;
+  }
+
+  #content-row {
+    margin-top: 60px;
+  }
+
+  #content-wrapper {
+    margin: 7rem auto;
+  }
+
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}

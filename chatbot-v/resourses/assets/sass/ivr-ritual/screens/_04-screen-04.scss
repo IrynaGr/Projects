@@ -1,0 +1,84 @@
+/* ###################################################### */
+/* ### 04. Screen-04 */
+/* ###################################################### */
+
+#screen_04 {
+
+  .call4action {
+    border-radius: $border_radius;
+    padding: 2rem 3rem 1rem;
+    background-color: rgba($color_dark, .5) !important;
+
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    label {
+      opacity: .75;
+    }
+
+    p {
+      font-size: 2rem;
+
+      b {
+        border-radius: $border_radius;
+        text-shadow: none;
+        background-color: $color_dark;
+        font-size: 3rem;
+        -webkit-animation: hartbeat 3.5s infinite;
+        animation: hartbeat 3.5s infinite;
+        @include call-font();
+      }
+
+    }
+
+    .btn-primary {
+      font-size: 1.5rem;
+    }
+
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  #screen_04 {
+
+    .chatline.fired.txt-lg {
+      opacity: 1;
+      font-size: 175%;
+      line-height: 1;
+      max-height: 15rem;
+    }
+
+    .call4action {
+
+      .btn-primary {
+        font-size: 1.75rem;
+        line-height: 1.25;
+        @include call-font();
+      }
+
+      figure.card {
+        max-width: 65%;
+        margin: 1rem auto;
+        -webkit-animation: hartbeat 5s infinite;
+        animation: hartbeat 5s infinite;
+      }
+
+      /*
+            h2 {
+              font-size: 3rem;
+            }
+
+            p {
+              font-size: 2rem;
+              line-height: 1.25;
+            }
+      */
+
+    }
+
+  }
+
+}

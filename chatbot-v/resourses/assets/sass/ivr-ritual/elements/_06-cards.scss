@@ -1,0 +1,182 @@
+/* ###################################################### */
+/* ### 06. Cards */
+/* ###################################################### */
+
+/* Firefox bug - Ref. https://github.com/twbs/bootstrap/issues/24657#issuecomment-360552841 */
+
+@-moz-document url-prefix() {
+
+  .carousel-item {
+    transition: transform 0.5s ease;
+    backface-visibility: visible;
+  }
+
+}
+
+/* Ref. https://davidwalsh.name/css-flip */
+
+/* Basic card set-up */
+
+.card-container {
+  -webkit-transition: #{$card_flip/2};
+  -moz-transition: #{$card_flip/2};
+  -ms-transition: #{$card_flip/2};
+  -o-transition: #{$card_flip/2};
+  transition: #{$card_flip/2};
+
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+
+  -webkit-transform: perspective(1000px);
+  -moz-transform: perspective(1000px);
+  -ms-transform: perspective(1000px);
+  -o-transform: perspective(1000px);
+  transform: perspective(1000px);
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  .card-flipper {
+    -webkit-transition: $card_flip;
+    -moz-transition: $card_flip;
+    -ms-transition: $card_flip;
+    -o-transition: $card_flip;
+    transition: $card_flip;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    position: relative;
+
+    .card-front,
+    .card-back {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+
+      -webkit-transition: $card_flip;
+      -moz-transition: $card_flip;
+      -ms-transition: $card_flip;
+      -o-transition: $card_flip;
+      transition: $card_flip;
+
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .card-front {
+      -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+      -o-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+    }
+
+    .card-back {
+      -webkit-transform: rotateY(0);
+      -moz-transform: rotateY(0);
+      -ms-transform: rotateY(0);
+      -o-transform: rotateY(0);
+      transform: rotateY(0);
+
+      z-index: 2;
+    }
+
+    &.flipped {
+
+      .card-back {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+      }
+
+      .card-front {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        -o-transform: rotateY(0);
+        transform: rotateY(0);
+      }
+
+    }
+
+  }
+
+  &:hover,
+  &:focus {
+    -webkit-transform: perspective(1000px) scale(1.1);
+    -moz-transform: perspective(1000px) scale(1.1);
+    -ms-transform: perspective(1000px) scale(1.1);
+    -o-transform: perspective(1000px) scale(1.1);
+    transform: perspective(1000px) scale(1.1);
+    z-index: 9999999;
+    position: relative;
+  }
+
+}
+
+/* Card styling */
+
+figure.card {
+  border-radius: $border_radius;
+  overflow: hidden;
+  box-shadow: 0 0 16px rgba($color_dark, .75);
+}
+
+:not(figure)[class*=card-] {
+  width: 150px;
+  height: 236px;
+}
+
+#card-slider {
+
+  &[data-picked="1"] {
+
+    .card-container .card-front {
+      @include card-background('front_1');
+    }
+
+  }
+
+  &[data-picked="2"] {
+
+    .card-container .card-front {
+      @include card-background('front_2');
+    }
+
+  }
+
+  &[data-picked="3"] {
+
+    .card-container .card-front {
+      @include card-background('front_3');
+    }
+
+  }
+
+  .card-container .card-back {
+    @include card-background('back', 'png', $color_light, .5);
+  }
+
+}

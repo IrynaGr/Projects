@@ -1,0 +1,160 @@
+/* ###################################################### */
+/* ### 06. Screen-Ritual */
+/* ###################################################### */
+
+form.ritual {
+
+  & {
+    text-align: center;
+  }
+
+  /* Main image */
+
+  figure {
+    position: relative;
+    max-width: $ritual_dimension;
+    margin: 0 auto;
+    border-radius: $border_radius;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba($color_dark, .5);
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    align-items: center;
+
+    /* Caption | text */
+
+    figcaption {
+      position: absolute;
+      z-index: 2;
+      text-align: center;
+      width: 100%;
+      font-size: 2.25rem;
+      color: #fff;
+      background: rgba($color_dark, .65);
+      padding: .75rem .25rem;
+      text-shadow: 0 0 10px rgba($color_dark, .75);
+
+      h1 {
+        font-size: 3rem;
+        margin: .5rem auto 1rem auto;
+      }
+
+      /* Press ### visual */
+
+      b {
+        @include press-dash();
+
+        span {
+          display: inline-block;
+          transform: translateY(-.25rem);
+        }
+
+      }
+
+    }
+
+    /* Enable innershadow for the image */
+
+    div {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 0 0 20px 4px $color_dark;
+      top: 0;
+      left: 0;
+    }
+
+  }
+
+  /* Funnel | progressbar */
+
+  ol {
+    max-width: $ritual_dimension;
+    margin: 0 auto;
+
+    li {
+      background: transparent;
+      margin: 2rem 0 .5rem 0 !important;
+      max-width: 13.33%;
+      min-width: 13.33%;
+      max-width: 13.33%;
+      padding: 0 0 13.33% 0;
+      max-height: 0;
+
+      &.active {
+        -webkit-animation: pulsing 6.31s infinite;
+        animation: pulsing 6.31s infinite;
+
+        img {
+          -webkit-animation: rotating 13.37s infinite;
+          animation: rotating 13.37s infinite;
+        }
+
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+    }
+
+  }
+
+}
+
+#screen_20 {
+
+  form.ritual {
+
+    figcaption h1 {
+      margin: .5rem auto 0 auto;
+      font-size: 4rem;
+    }
+
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  form.ritual {
+
+    figure {
+      display: block;
+
+      figcaption {
+        position: initial;
+        background: darken($color_brand, 5%);
+        font-size: 1.5rem;
+        padding: 1.25rem 1rem 1rem 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, .9);
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+      }
+
+    }
+
+  }
+
+  #screen_20 {
+
+    form.ritual {
+
+      figcaption h1 {
+        font-size: 3rem;
+      }
+
+    }
+
+  }
+
+}

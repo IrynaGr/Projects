@@ -1,0 +1,140 @@
+/* ###################################################### */
+/* ### 05. Screen-Campaign */
+/* ###################################################### */
+
+form.campaign {
+
+  /* Darker background */
+
+  & {
+    background: rgba($color_dark, .25) !important;
+    margin: 0 auto;
+    padding: 1rem;
+    color: $color_light;
+    border-radius: $border_radius;
+    text-align: center;
+
+    /* Main header */
+
+    h3 {
+      font-size: 3rem;
+      line-height: 1.15;
+      margin: .75rem auto .25rem auto;
+    }
+
+    /* Subtext */
+
+    small {
+      opacity: .75;
+      font-size: 1.75rem;
+      letter-spacing: .01rem;
+    }
+
+    /* Main content-field */
+
+    .input-area {
+      border: 2px solid $color_light;
+      border-radius: $border_radius;
+      padding: 1rem;
+      max-width: 35rem;
+      margin: 1.75rem auto 1.5rem auto;
+      background: rgba($color_light, .1);
+      pointer-events: none;
+
+      li {
+        font-size: 2rem;
+      }
+
+    }
+
+    /* Multiple-choise */
+
+    .multiple-choise {
+
+      li {
+
+        &:not(:last-child) {
+          margin-bottom: 1.5rem;
+        }
+
+        b {
+          @include press-dash();
+
+          span {
+            display: inline-block;
+          }
+
+        }
+
+        /* Different styling for medieval numbers */
+        /* Ref. https://en.wikipedia.org/wiki/Text_figures */
+
+        &:nth-child(1) b span {
+          transform: translateY(-.25rem);
+        }
+
+        &:nth-child(2) b span {
+          transform: translateY(0);
+        }
+
+        &:nth-child(3) b span {
+          transform: translateY(-.6rem);
+        }
+
+      }
+
+    }
+
+    /* Birthday */
+
+    .birthday {
+      text-shadow: 0 0 16px rgba($color_dark, .75);
+
+      li {
+
+        &:not(:last-child):after {
+          content: '-';
+          font-size: 2rem;
+          padding: 0 0 0 1rem;
+        }
+
+      }
+
+    }
+
+    /* Animated card */
+
+    figure.hartbeat {
+      -webkit-animation: hartbeat 5s infinite;
+      animation: hartbeat 5s infinite;
+      max-width: 13rem;
+      margin: 1rem auto;
+    }
+
+  }
+
+}
+
+@media (min-width: 991px) {
+
+  form.campaign {
+
+    .input-area {
+      min-width: 35rem;
+    }
+
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  form.campaign {
+
+    & {
+      margin-top: -3rem;
+    }
+
+  }
+
+}

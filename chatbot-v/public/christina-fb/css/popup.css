@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Marck script";
+  src: url(/fonts/MarckScript.ttf?8213f9f79159ce265b433a91528304b7);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pangram";
+  src: url(/fonts/Pangram-Regular.otf?6c266f52b1a291ee757afff2efd4cd90);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(/fonts/myriadro-regular.otf?d75d7f70aa160104a45a743eae7a8a7e);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.facebook-client-popup {
+  position: fixed;
+  width: 60%;
+  height: 73%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.modal-christina {
+  background-image: url(/images/bk-modal.png?4c0cab8899d37253e67b5e20e1d4db41);
+  background-size: cover;
+  color: #fff;
+  max-width: 845px;
+}
+
+.application-avatar-popup {
+  width: 55%;
+  z-index: 1;
+  position: relative;
+  top: 3%;
+}
+
+.application-medium-popup {
+  border-radius: 25px;
+  font-size: 1.1rem;
+  color: #fff;
+  width: 30rem;
+  height: 28rem;
+  position: relative;
+  bottom: 7%;
+}
+
+.application-christina {
+  background-color: rgba(85, 60, 116, 0.9);
+}
+
+.img-popup {
+  border: 4px solid #fff;
+  z-index: 1;
+  width: 50%;
+  border-radius: 80px;
+}
+
+.application-medium-popup-header {
+  margin-bottom: -1rem;
+}
+
+.application-medium-popup-header .popup-medium {
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: #ffffff;
+  font-family: "Pangram";
+  font-weight: 500;
+}
+
+.application-medium-popup-header .popup-name {
+  font-size: 45px;
+  color: #ffffff;
+  font-family: "Marck script";
+  letter-spacing: 8px;
+}
+
+.application-medium-popup-telephone {
+  color: #fff;
+  border: 1px solid transparent;
+  width: 80%;
+  margin: auto;
+  font-size: 24px;
+  font-family: "Myriad Pro";
+  border-radius: 15px;
+}
+
+.background-christina {
+  background-color: #3563a3;
+}
+
+.application-medium-popup-text {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Pangram";
+}
+
+.application-medium-popup-text2 {
+  font-size: 16px;
+  color: #fefefe;
+  font-family: "Myriad Pro";
+  text-align: center;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+@media screen and (max-width: 1366px) {
+  .facebook-client-popup {
+    width: 75%;
+    height: 33%;
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .facebook-client-popup {
+    width: 90%;
+    height: 45%;
+    top: 41%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .application-content {
+    margin-top: 0;
+  }
+
+  .application-medium-popup-telephone-mobile {
+    color: #fff;
+    border: 1px solid transparent;
+    width: 80%;
+    margin: auto;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .application-medium-popup-input-text-mobile {
+    color: #2d0606;
+    background-color: #fff;
+    border: 1px solid transparent;
+    width: 67%;
+    margin: auto;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .facebook-client-popup {
+    height: 70%;
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .img-popup {
+    width: 35%;
+  }
+
+  .application-medium-popup {
+    width: 28rem;
+  }
+
+  .facebook-client-popup {
+    top: 40%;
+  }
+}
+

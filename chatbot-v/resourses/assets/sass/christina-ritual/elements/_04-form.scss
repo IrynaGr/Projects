@@ -1,0 +1,109 @@
+/* ###################################################### */
+/* ### 04. Forms */
+/* ###################################################### */
+
+::-webkit-input-placeholder {
+  color: lighten($color_gray, 30%) !important;
+}
+
+::-moz-placeholder {
+  color: lighten($color_gray, 30%) !important;
+}
+
+:-ms-input-placeholder {
+  color: lighten($color_gray, 30%) !important;
+}
+
+:-moz-placeholder {
+  color: lighten($color_gray, 30%) !important;
+}
+
+.form-text {
+  margin-top: $border_radius;
+  opacity: .5;
+}
+
+.form-control {
+  border: 3px solid transparent;
+  border-radius: $border_radius;
+  box-shadow: inset 0 0 6px rgba($color_brand, .5);
+}
+
+.form-control:focus {
+  border-color: $color_accent;
+  @include form-shadow;
+}
+
+/* Buttons */
+
+.btn-primary {
+  background-color: $color_accent;
+  @include linear-gradient();
+  border-color: darken($color_accent, 15%);
+  box-shadow: 0 0 12px rgba($color_light, .5);
+  font-size: 1.25rem;
+  border-width: 2px;
+  border-radius: $border_radius;
+
+  &:focus,
+  &:not(:disabled):not(.disabled):active:focus {
+    @include form-shadow;
+  }
+
+  &:hover {
+    background-color: darken($color_accent, 30%);
+    @include linear-gradient(30%);
+    border-color: darken($color_accent, 30%);
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
+    background-color: darken($color_accent, 15%);
+    @include linear-gradient(30%);
+    border-color: darken($color_accent, 15%);
+  }
+
+}
+
+/* Invalid fields */
+
+.alert-danger {
+
+  &,
+  &:focus {
+    color: darken($color_alert, 15%);
+    background-color: lighten($color_alert, 30%);
+    border-color: $color_alert;
+  }
+
+}
+
+.data-required-wrapper {
+  padding: 1rem;
+
+  &.alert-danger {
+    box-shadow: inset 0 0 0 2px $color_alert;
+    border-radius: $border_radius;
+  }
+
+}
+
+.alert-danger {
+
+  &::-webkit-input-placeholder {
+    color: darken($color_alert, 25%) !important;
+  }
+
+  &::-moz-placeholder {
+    color: darken($color_alert, 25%) !important;
+  }
+
+  &:-ms-input-placeholder {
+    color: darken($color_alert, 25%) !important;
+  }
+
+  &:-moz-placeholder {
+    color: darken($color_alert, 25%) !important;
+  }
+
+}

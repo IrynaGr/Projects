@@ -1,0 +1,208 @@
+/* ###################################################### */
+/* ### 03. Typography */
+/* ###################################################### */
+
+body {
+  font-family: 'app', serif;
+}
+
+.text-light {
+  color: $color_light !important;
+}
+
+/* Faux bold -> font doesn't have bold-weight itself */
+
+/* Ref. https://codepen.io/Grilly86/pen/vIpGl */
+
+b {
+  letter-spacing: .01rem;
+  text-shadow: 1px 0 0 currentColor;
+  // text-shadow: 1px 0 0 currentColor, 2px 0 0 currentColor;
+  // text-shadow: 1px 0 0 currentColor, 2px 0 0 currentColor, 3px 0 0 currentColor;
+}
+
+/* Logotype */
+
+header {
+
+  h2 {
+    min-height: 2.5rem;
+    width: 100%;
+
+    .navbar-brand {
+      position: absolute;
+      opacity: .5;
+      font-size: 1.75rem;
+      z-index: 3;
+      cursor: default;
+
+      &:hover {
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+}
+
+/* Balloon arrow */
+
+.chat-wrapper {
+  border-radius: $border_radius;
+  position: relative;
+  background: rgba($color_light, .75);
+  margin: 0 auto 3rem auto;
+  padding: .75rem;
+  width: 100%;
+  z-index: 1;
+  -webkit-transition: all $image_fade ease;
+  transition: all $image_fade ease;
+  min-height: 48px;
+
+  &:after {
+    bottom: 100%;
+    left: 25%;
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba($color_light, 0);
+    border-bottom-color: rgba($color_light, .75);
+    border-width: $arrow_dimension;
+    margin-left: 20rem;
+    -webkit-transition: all $image_fade ease;
+    transition: all $image_fade ease;
+  }
+
+}
+
+/* Chat-lines */
+
+.h1 {
+  color: $color_brand;
+  margin: 0;
+  padding: 0 .75em 0 0;
+  max-height: 5.5rem;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  position: relative;
+  overflow: hidden;
+
+  &.disabled {
+    pointer-events: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color_dark;
+    }
+
+  }
+
+  .chatline {
+    margin-bottom: 0;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+
+    &.fired {
+      opacity: .75;
+    }
+
+  }
+
+}
+
+.typed-fade-out {
+  opacity: 0;
+  -webkit-transition: opacity ease $typed_fade;
+  transition: opacity ease $typed_fade;
+  -webkit-animation: 0;
+  animation: 0;
+}
+
+@media (max-width: 767px) {
+
+  .chat-wrapper {
+    margin: 0 auto 1.5rem auto;
+
+    &:after {
+      content: none;
+    }
+
+  }
+
+  .h1 {
+    font-size: 1.35rem;
+  }
+
+}
+
+/* Carousel chevron */
+
+.chevron {
+  position: absolute;
+  top: 40%;
+  background: rgba($color_dark, .5);
+  width: $chevron_dimension;
+  height: $chevron_dimension;
+  border-radius: 50%;
+  -webkit-transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
+
+  &:hover {
+    background: rgba($color_dark, .75);
+  }
+
+  &.left {
+    left: .5rem;
+
+    i {
+      left: $chevron_dimension/3;
+
+      &:before {
+        transform: rotate(-135deg);
+      }
+
+    }
+
+  }
+
+  &.right {
+    right: .5rem;
+
+    i {
+      right: $chevron_dimension/3;
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+    }
+
+  }
+
+  i {
+    position: absolute;
+    top: $chevron_dimension/4;
+
+    &:before {
+      border-style: solid;
+      border-width: $chevron_dimension/10 $chevron_dimension/10 0 0;
+      content: '';
+      display: inline-block;
+      height: $chevron_dimension/2;
+      width: $chevron_dimension/2;
+      position: relative;
+      color: $color_light;
+    }
+
+  }
+
+}

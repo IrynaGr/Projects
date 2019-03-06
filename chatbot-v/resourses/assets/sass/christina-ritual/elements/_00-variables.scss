@@ -1,0 +1,66 @@
+/* ###################################################### */
+/* ### 00. Variables | Mixins */
+/* ###################################################### */
+
+$color_dark: #000;
+$color_light: #fff;
+$color_gray: #666;
+$color_brand: #33124c;
+$color_accent: #7c45b1;
+$color_alert: #c13f4d;
+
+$border_radius: .5rem;
+
+$card_flip: 2s;
+$typed_fade: 0;
+$candle_fire: 3s;
+$image_fade: 2s;
+
+$chevron_dimension: 4rem;
+$arrow_dimension: 0 2rem 2rem 0;
+$ritual_dimension: 50rem;
+
+@mixin press-dash() {
+  border: 2px solid #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, .5);
+  font-size: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+@mixin call-font() {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@mixin form-shadow() {
+  box-shadow: 0 0 0 .2rem rgba(darken($color_accent, 50%), .5);
+}
+
+@mixin app-background($color: transparent, $image: '') {
+  background: $color url('../img/default/' + $image) center center no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-size: cover;
+}
+
+@mixin card-background($image, $extension: 'gif', $color: $color_dark, $opacity: .75) {
+  background: darken($color_brand, 10%) url('../img/screens/screen-02/card_' + $image + '.' + $extension) center center no-repeat;
+  background-size: 100% auto;
+  background-size: cover;
+  box-shadow: 0 0 12px rgba($color, $opacity);
+  border-radius: 10px;
+}
+
+@mixin font-face() {
+  font-family: 'app';
+  src: url('../../../fonts/regular.woff') format('woff');
+}
+
+@mixin linear-gradient($percentage: 25%) {
+  background-image: -webkit-linear-gradient(to bottom, $color_accent 0%, darken($color_accent, $percentage) 100%);
+  background-image: linear-gradient(to bottom, $color_accent 0%, darken($color_accent, $percentage) 100%);
+}

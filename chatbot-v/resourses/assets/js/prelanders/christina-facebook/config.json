@@ -1,0 +1,12 @@
+{
+  "chats": {
+    "input-field": {
+      "what-is-your-gender": "gender",
+      "what-is-your-name": "name",
+      "please-tell-me-birthday": "birthday",
+      "what-is-your-email": "email",
+      "thank-you-can-you-confirm": "email-confirm",
+      "your-friend-christina": "closed"
+    }
+  }
+}
